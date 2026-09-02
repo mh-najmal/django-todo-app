@@ -16,7 +16,7 @@
                 {% if task.completed %} 
                     <s>{{ task.title }}</s> 
                 {% else %} 
-                    {{ task.title }} 
+                    to do - {{ task.title }} 
                     <a href="/complete/{{ task.id }}/">Complete</a> 
                 {% endif %} 
                     <a href="/delete/{{ task.id }}/">Delete</a> 
